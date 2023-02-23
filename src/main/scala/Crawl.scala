@@ -73,11 +73,4 @@ object Crawl {
       file <- basicRequest.get(location).response(asFile(new File(saveLocation))).send(wire) |> extractFile(saveLocation)
     } yield file
   }
-
-  //def test() = {
-  //  for {
-  //    root <- fetch(uri"https://www.scala-exercises.org/monocle/lens")
-  //    number = root \> getNumber
-  //  } yield ()
-  //}
 }
